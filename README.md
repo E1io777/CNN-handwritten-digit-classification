@@ -1,28 +1,36 @@
-# MNIST Handwritten Digit Classification
+# MNIST Handwritten Digit Data Exploration
 
-This is a small Python project. 
+This repository contains my Python program for a university lab titled **“Constructing a Convolutional Neural Network Architecture for Handwritten Digits Classification and Image Matching.”**
 
-**“Constructing a Convolutional Neural Network Architecture for Handwritten Digits Classification and Image Matching.”**
+The question provided for this part of the lab asks me to load and inspect the MNIST handwritten-digit dataset. My submitted program focuses on those data-loading and visualization tasks.
 
 ## What the program does
 
-- Loads the MNIST handwritten-digit dataset.
-- Normalizes image pixel values from 0–255 to 0–1.
-- Checks the sizes of the training and test datasets.
-- Prints the first training image's pixel values and label.
-- Displays the first 10 test images with their labels.
+- Imports NumPy, Matplotlib, and TensorFlow.
+- Sets random seeds.
+- Loads the MNIST training and test datasets.
+- Normalizes pixel values from 0–255 to 0–1.
+- Checks dataset dimensions and label information.
+- Displays the first 10 test images with their correct labels.
 
----
+## Example output
 
-## Requirement 
+The output from my program shows:
+
+- 60,000 training labels.
+- The first training label, which is `5`.
+- 10,000 test images, each measuring 28 × 28 pixels.
+- 10,000 test labels.
+- A plot of the first 10 test images and their labels.
+
+## Requirements
 
 - Python 3
 - NumPy
 - Matplotlib
 - TensorFlow
 
----
-## How to run it
+## How to run
 
 1. Download or clone this repository.
 2. Install the required libraries:
@@ -37,14 +45,8 @@ This is a small Python project.
    python main.py
    ```
 
-The first run may need an internet connection so TensorFlow can download MNIST.
+The first run may need an internet connection so TensorFlow can download the MNIST dataset.
 
----
-## Expected dataset sizes
+## Scope
 
-- Training images: 60,000 images, each 28 × 28 pixels.
-- Training labels: 60,000 labels.
-- Test images: 10,000 images, each 28 × 28 pixels.
-- Test labels: 10,000 labels.
-
-This is a learning project. The code and documentation will be improved as I review the remaining requirements.
+The code in this repository represents the question and program currently documented here. It loads and explores the dataset; it does **not** train a CNN or implement a separate image-matching method. I will describe only what the program actually does, rather than claim features that are not implemented.
