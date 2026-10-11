@@ -1,9 +1,10 @@
 # MNIST Handwritten Digit Data Exploration
 
-This repository contains my Python program for a university lab titled **“Constructing a Convolutional Neural Network Architecture for Handwritten Digits Classification and Image Matching.”**
+This repository contains Python program
 
-The question provided for this part of the lab asks me to load and inspect the MNIST handwritten-digit dataset. My submitted program focuses on those data-loading and visualization tasks.
+**“Constructing a Convolutional Neural Network Architecture for Handwritten Digits Classification and Image Matching.”**
 
+---
 ## What the program does
 
 - Imports NumPy, Matplotlib, and TensorFlow.
@@ -13,6 +14,7 @@ The question provided for this part of the lab asks me to load and inspect the M
 - Checks dataset dimensions and label information.
 - Displays the first 10 test images with their correct labels.
 
+---
 ## Example output
 
 The output from my program shows:
@@ -23,6 +25,7 @@ The output from my program shows:
 - 10,000 test labels.
 - A plot of the first 10 test images and their labels.
 
+---
 ## Requirements
 
 - Python 3
@@ -30,6 +33,7 @@ The output from my program shows:
 - Matplotlib
 - TensorFlow
 
+---
 ## How to run
 
 1. Download or clone this repository.
@@ -47,6 +51,7 @@ The output from my program shows:
 
 The first run may need an internet connection so TensorFlow can download the MNIST dataset.
 
+---
 ## Scope
 
 The code in this repository represents the question and program currently documented here. It loads and explores the dataset; it does **not** train a CNN or implement a separate image-matching method. I will describe only what the program actually does, rather than claim features that are not implemented.
