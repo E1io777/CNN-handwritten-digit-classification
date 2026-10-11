@@ -1,8 +1,10 @@
 # MNIST Handwritten Digit Classification
 
-This is a small Python project based on my university lab exam, **“Constructing a Convolutional Neural Network Architecture for Handwritten Digits Classification and Image Matching.”**
+This is a small Python project. 
 
-## What my program does
+**“Constructing a Convolutional Neural Network Architecture for Handwritten Digits Classification and Image Matching.”**
+
+## What the program does
 
 - Loads the MNIST handwritten-digit dataset.
 - Normalizes image pixel values from 0–255 to 0–1.
@@ -10,15 +12,16 @@ This is a small Python project based on my university lab exam, **“Constructin
 - Prints the first training image's pixel values and label.
 - Displays the first 10 test images with their labels.
 
-**Note:** The version currently included here is the data-loading and exploration part of the lab. It does not train a CNN or perform image matching yet. I will add those parts only after checking the full exam instructions and my original submission.
+---
 
-## What you need
+## Requirement 
 
 - Python 3
 - NumPy
 - Matplotlib
 - TensorFlow
 
+---
 ## How to run it
 
 1. Download or clone this repository.
@@ -36,6 +39,7 @@ This is a small Python project based on my university lab exam, **“Constructin
 
 The first run may need an internet connection so TensorFlow can download MNIST.
 
+---
 ## Expected dataset sizes
 
 - Training images: 60,000 images, each 28 × 28 pixels.
@@ -43,4 +47,4 @@ The first run may need an internet connection so TensorFlow can download MNIST.
 - Test images: 10,000 images, each 28 × 28 pixels.
 - Test labels: 10,000 labels.
 
-This is a learning project based on my university lab work. The code and documentation will be improved as I review the remaining requirements.
+This is a learning project. The code and documentation will be improved as I review the remaining requirements.
