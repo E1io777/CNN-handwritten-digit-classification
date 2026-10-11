@@ -2,7 +2,7 @@
 
 **Original university lab:** *Constructing a Convolutional Neural Network Architecture for Handwritten Digits Classification and Image Matching*
 
-This repository documents an undergraduate laboratory exercise using the MNIST handwritten-digit dataset, then develops a clearly separated CNN classification experiment as a portfolio extension.
+This repository documents an undergraduate laboratory exercise using the MNIST handwritten-digit dataset, followed by a clearly separated CNN classification experiment as a portfolio extension.
 
 > **Scope note:** The exam page currently documented here covers loading and exploring MNIST. The remaining exam instructions have not yet been verified, so image matching is not presented as an implemented feature. See [the original lab scope](docs/original_lab_scope.md).
 
@@ -16,7 +16,7 @@ This repository documents an undergraduate laboratory exercise using the MNIST h
 
 ## Repository structure
 
-\`\`\`text
+~~~text
 .
 ├── README.md
 ├── requirements.txt
@@ -27,60 +27,60 @@ This repository documents an undergraduate laboratory exercise using the MNIST h
 ├── docs/
 │   └── original_lab_scope.md
 └── results/                 # Generated locally by the scripts
-\`\`\`
+~~~
 
 ## Dataset
 
-The scripts use MNIST through tensorflow.keras.datasets.mnist. MNIST contains 60,000 training images and 10,000 test images. Each image is a 28 × 28 grayscale image representing a digit from 0 to 9. TensorFlow downloads the dataset the first time it is loaded, so an internet connection may be required on the first run.
+The scripts use MNIST through `tensorflow.keras.datasets.mnist`. MNIST contains 60,000 training images and 10,000 test images. Each image is a 28 × 28 grayscale image representing a digit from 0 to 9. TensorFlow downloads the dataset the first time it is loaded, so an internet connection may be required on the first run.
 
 ## Setup
 
 Use a virtual environment if possible.
 
-\`\`\`bash
+~~~bash
 python -m venv .venv
-\`\`\`
+~~~
 
-Activate it, then install the dependencies:
+Activate it, then install the dependencies.
 
 **Windows**
-\`\`\`powershell
-.venv\\Scripts\\Activate.ps1
+~~~powershell
+.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
-\`\`\`
+~~~
 
 **macOS / Linux**
-\`\`\`bash
+~~~bash
 source .venv/bin/activate
 pip install -r requirements.txt
-\`\`\`
+~~~
 
 ## Run the original-data exploration
 
-\`\`\`bash
+~~~bash
 python src/01_mnist_exploration.py
-\`\`\`
+~~~
 
-This script reports the dataset dimensions, displays the pixel values of the first training image, prints its label, and plots the first ten test images with their labels.
+This script reports dataset dimensions, displays the pixel values of the first training image, prints its label, and plots the first ten test images with their labels.
 
 Expected dataset dimensions:
 
 | Array | Expected shape |
 |---|---|
-| Training images | (60000, 28, 28) |
-| Training labels | (60000,) |
-| Test images | (10000, 28, 28) |
-| Test labels | (10000,) |
+| Training images | `(60000, 28, 28)` |
+| Training labels | `(60000,)` |
+| Test images | `(10000, 28, 28)` |
+| Test labels | `(10000,)` |
 
 The first training label in the standard MNIST dataset is 5. Pixel values are converted to floating-point values between 0 and 1 by dividing by 255.
 
 ## Run the CNN portfolio extension
 
-\`\`\`bash
+~~~bash
 python src/02_cnn_classifier.py
-\`\`\`
+~~~
 
-The second script trains a small CNN, evaluates it on the held-out MNIST test set, and writes plots and a confusion matrix to the results/ directory. Training time and results depend on the local environment. **No accuracy result is claimed here in advance; run the script to generate the actual measurements.**
+The second script trains a small CNN, evaluates it on the held-out MNIST test set, and writes plots and a confusion matrix to the `results/` directory. Training time and results depend on the local environment. **No accuracy result is claimed in advance; run the script to generate actual measurements.**
 
 The CNN experiment is labelled as a portfolio extension because the exam page documented so far does not establish that this exact architecture was part of the original submission.
 
@@ -98,7 +98,7 @@ Classification and image matching are different tasks. This project currently do
 
 ## Academic context
 
-The project originated as a university laboratory exercise. The original task and the later portfolio extension are documented separately to make the development history clear. Any future changes, experiments, or results should be described accurately and should not be represented as part of the original exam unless supported by the original materials.
+The project originated as a university laboratory exercise. The original task and the later portfolio extension are documented separately to make the development history clear. Future changes, experiments, and results should be described accurately and should not be represented as part of the original exam unless supported by the original materials.
 
 ## License
 
